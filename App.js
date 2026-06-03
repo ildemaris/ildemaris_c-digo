@@ -35,15 +35,15 @@ headerTintColor: '#fff',
 cardStyle: { flex: 1, backgroundColor: '#fff', overflow: Platform.OS === 'web' ? 'visible' : 'hidden' }
 }}
 >
-<Stack.Screen
-name="Home"
-component={HomeScreen}
-options={{ headerTitle: props => <LogoTitle {...props} /> }}
-/>
-<Stack.Screen name="Ingredientes" component={IngredientsScreen} />
-<Stack.Screen name="Utensílios" component={ToolsScreen} />
-<Stack.Screen name="Passo a Passo" component={StepsScreen} />
-</Stack.Navigator>
-</NavigationContainer>
-);
-}    });
+<Stack.Screen 
+          name="Home" 
+          component={HomeScreen} 
+          options={{ headerTitle: props => <LogoTitle {...props} /> }} 
+        />
+        <Stack.Screen name="Ingredientes" component={IngredientsScreen} />
+        <Stack.Screen name="Utensílios" component={ToolsScreen} />
+        <Stack.Screen name="Passo a Passo" component={StepsScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
